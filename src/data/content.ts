@@ -8,7 +8,7 @@ export const profile = {
   tagline:
     "I build and ship real-world web and mobile products \u2014 from ERP features at work to BizMate, my own business-tools platform, on the side.",
   about:
-    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the complete SDLC \u2014 requirement analysis, development, testing, and deployment. Currently working as a Jr. Software Developer on Odoo/ERP systems, while continuing to strengthen the MERN stack (MongoDB, Express.js, React.js, Node.js) and ship independent projects like BizMate and UtilVerse.",
+    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the complete SDLC \u2014 requirement analysis, development, testing, and deployment. I hold an MCA degree and currently work as a Jr. Software Developer on Odoo/ERP systems, while continuing to strengthen the MERN stack (MongoDB, Express.js, React.js, Node.js) and ship independent projects like BizMate and UtilVerse.",
 };
 
 export const topSkills = ["Dart", "Flutter", "Python", "React"];
@@ -61,7 +61,14 @@ export const builds: Build[] = [
     role: "Solo builder, full-stack",
     description:
       "A free, web-based toolkit for Indian freelancers and small businesses \u2014 GST calculator, invoice generator, quotation generator, and saved-document management, with auth-gated profile auto-fill and a full PWA setup.",
-    stack: ["React", "Vite", "TypeScript", "Tailwind CSS", "Supabase", "Zustand"],
+    stack: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Zustand",
+    ],
     links: [{ label: "Visit live site", href: "https://mybizmate.vercel.app" }],
     flagship: true,
   },
@@ -120,7 +127,7 @@ export const log = [
     date: "2024 \u2014 2026",
     title: "Master of Computer Applications (MCA)",
     org: "Sinhgad Institute of Business Administration and Research (SIBAR)",
-    detail: "In progress.",
+    detail: "Completed",
   },
   {
     date: "2021 \u2014 2024",
