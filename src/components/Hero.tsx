@@ -14,7 +14,10 @@ const bars = [
 
 export default function Hero() {
   return (
-    <section id="top" className="max-w-5xl mx-auto px-6 md:px-8 pt-20 pb-24 md:pt-28 md:pb-32">
+    <section
+      id="hero"
+      className="max-w-6xl mx-auto px-6 md:px-8 pt-20 pb-24 md:pt-28 md:pb-32"
+    >
       <div className="grid md:grid-cols-[1fr_auto] gap-10 items-end">
         <div>
           <Reveal>
@@ -56,7 +59,10 @@ export default function Hero() {
               <div
                 key={i}
                 className={`rise-bar w-3 rounded-t-sm ${bar.color}`}
-                style={{ height: `${bar.h}px`, animationDelay: `${0.5 + i * 0.06}s` }}
+                style={{
+                  height: `${bar.h}px`,
+                  animationDelay: `${0.5 + i * 0.06}s`,
+                }}
               />
             ))}
           </div>

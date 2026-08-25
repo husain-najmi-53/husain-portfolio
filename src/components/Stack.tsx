@@ -3,9 +3,14 @@ import Reveal from "./Reveal";
 
 export default function Stack() {
   return (
-    <section id="stack" className="max-w-5xl mx-auto px-6 md:px-8 py-16 md:py-20">
+    <section
+      id="stack"
+      className="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20"
+    >
       <Reveal>
-        <p className="text-sm font-medium text-teal mb-3 tracking-wide">Stack</p>
+        <p className="text-sm font-medium text-teal mb-3 tracking-wide">
+          Stack
+        </p>
       </Reveal>
       <Reveal delay={0.05}>
         <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-3">
@@ -28,7 +33,9 @@ export default function Stack() {
         {stack.map((row, i) => (
           <Reveal key={row.category} delay={0.05 * i}>
             <div>
-              <p className="text-sm font-medium text-ink-soft mb-3">{row.category}</p>
+              <p className="text-sm font-medium text-ink-soft mb-3">
+                {row.category}
+              </p>
               <div className="flex flex-wrap gap-2">
                 {row.items.map((item) => (
                   <span

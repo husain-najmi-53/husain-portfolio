@@ -7,10 +7,12 @@ import Builds from "./components/Builds";
 import Log from "./components/Log";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="relative min-h-screen">
+      <div id="top" className="absolute top-0 left-0 -z-50 pointer-events-none" />
       <ScrollProgress />
       <Nav />
       <main>
@@ -22,6 +24,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

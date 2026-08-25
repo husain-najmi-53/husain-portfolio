@@ -4,9 +4,11 @@ import Reveal from "./Reveal";
 export default function Contact() {
   return (
     <section id="contact" className="bg-deep text-white">
-      <div className="max-w-5xl mx-auto px-6 md:px-8 py-20 md:py-28">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 py-20 md:py-28">
         <Reveal>
-          <p className="text-sm font-medium text-mint mb-3 tracking-wide">Contact</p>
+          <p className="text-sm font-medium text-mint mb-3 tracking-wide">
+            Contact
+          </p>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="font-display text-3xl md:text-5xl font-semibold tracking-tight max-w-xl leading-tight mb-8">

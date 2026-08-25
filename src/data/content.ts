@@ -8,7 +8,7 @@ export const profile = {
   tagline:
     "I build and ship real-world web and mobile products \u2014 from ERP features at work to BizMate, my own business-tools platform, on the side.",
   about:
-    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the complete SDLC \u2014 requirement analysis, development, testing, and deployment. I hold an MCA degree and currently work as a Jr. Software Developer on Odoo/ERP systems, while continuing to strengthen the MERN stack (MongoDB, Express.js, React.js, Node.js) and ship independent projects like BizMate and UtilVerse.",
+    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the full SDLC. I hold an MCA and currently work as a Software Developer on Odoo/ERP systems, and build independent projects like BizMate and UtilVerse using the MERN stack.",
 };
 
 export const topSkills = ["Dart", "Flutter", "Python", "React"];
@@ -55,7 +55,7 @@ export type Build = {
 export const builds: Build[] = [
   {
     id: "bizmate",
-    status: "IN PRODUCTION",
+    status: "PUBLISHED",
     name: "BizMate",
     timeline: "2026 \u2014 ongoing",
     role: "Solo builder, full-stack",
@@ -71,6 +71,19 @@ export const builds: Build[] = [
     ],
     links: [{ label: "Visit live site", href: "https://mybizmate.vercel.app" }],
     flagship: true,
+  },
+  {
+    id: "hmcreations53",
+    status: "PUBLISHED",
+    name: "HMcreations53",
+    timeline: "2026 \u2014 ongoing",
+    role: "Solo builder, full-stack",
+    description:
+      'My freelance dev-studio brand \u2014 a landing page showcasing web, mobile, and custom development services, with a live projects showcase, a working contact form, and a custom hexagonal "HM" logo system.',
+    stack: ["React", "TypeScript", "Vite", "Fraunces", "Inter", "Web3Forms"],
+    links: [
+      { label: "Visit live site", href: "https://hmcreations53.vercel.app" },
+    ],
   },
   {
     id: "utilverse",
@@ -107,33 +120,60 @@ export const builds: Build[] = [
   },
 ];
 
-export const log = [
+export type LogEntry = {
+  date: string;
+  title: string;
+  org: string;
+  detail: string;
+  type: "work" | "education";
+  badge: string;
+  skills: string[];
+  current?: boolean;
+  highlight?: string;
+};
+
+export const log: LogEntry[] = [
   {
-    date: "Feb 2026 \u2014 Present",
-    title: "Jr. Software Developer",
+    date: "Feb 2026 — Present",
+    title: "Software Developer",
     org: "Axanta Business Solutions (Axanta ERP)",
     detail:
-      "Working on Odoo-based ERP systems \u2014 developing new features, fixing day-to-day bugs, and general maintenance work across business modules.",
+      "Developing new features, resolving production bugs, and maintaining core business modules on enterprise Odoo ERP systems.",
+    type: "work",
+    badge: "Full-time",
+    skills: ["Odoo", "Python", "ERP Systems", "PostgreSQL", "Business Logic"],
     current: true,
   },
   {
-    date: "Jul 2025 \u2014 Oct 2025",
+    date: "Jul 2025 — Oct 2025",
     title: "Software Engineer Intern",
     org: "NBK Software Solutions",
     detail:
-      "Contributed to the end-to-end development of the Autoinsure mobile app in Flutter through to Play Store publication, for fintech client Bhartiya Bima Fintech \u2014 development, testing, bug-fixing, and technical documentation.",
+      "Contributed to the end-to-end development of the Autoinsure fintech mobile app in Flutter through to Google Play Store publication for Bhartiya Bima Fintech — covering feature development, QA testing, bug-fixing, and technical documentation.",
+    type: "work",
+    badge: "Internship",
+    skills: ["Flutter", "Dart", "Fintech", "Play Store", "SDLC", "Git"],
   },
   {
-    date: "2024 \u2014 2026",
+    date: "2024 — 2026",
     title: "Master of Computer Applications (MCA)",
     org: "Sinhgad Institute of Business Administration and Research (SIBAR)",
-    detail: "Completed",
+    detail:
+      "Advanced coursework covering Software Architecture, Full-Stack Web Technologies, Database Systems, and Cloud-native Development.",
+    type: "education",
+    badge: "Postgraduate",
+    highlight: "80.12% Score",
+    skills: ["Software Engineering", "Full-Stack Dev", "Database Design", "Algorithms"],
   },
   {
-    date: "2021 \u2014 2024",
+    date: "2021 — 2024",
     title: "BBA (Computer Application) / BCA",
     org: "Abeda Inamdar Senior College of Arts, Science and Commerce",
     detail:
-      "Dual-titled degree in Web Development and App Development. Graduated with 90.92%.",
+      "Dual-titled degree in Web Development and App Development with strong foundations in object-oriented programming, data structures, and web technologies.",
+    type: "education",
+    badge: "Undergraduate",
+    highlight: "90.92% Score",
+    skills: ["Web Development", "App Development", "Java", "PHP", "Data Structures"],
   },
 ];

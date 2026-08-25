@@ -11,13 +11,24 @@ const links = [
 export default function Nav() {
   return (
     <header className="sticky top-0 z-30 bg-paper/90 backdrop-blur-md border-b border-ink/10">
-      <div className="max-w-5xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
-        <a href="#top" className="font-display font-semibold text-lg tracking-tight">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
+        <a
+          href="#top"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+          className="font-display font-semibold text-lg tracking-tight"
+        >
           Husain<span className="text-teal">.</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-ink-soft">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-ink transition-colors">
+            <a
+              key={l.href}
+              href={l.href}
+              className="hover:text-ink transition-colors"
+            >
               {l.label}
             </a>
           ))}
