@@ -60,7 +60,7 @@ function BuildCard({ build, index }: { build: Build; index: number }) {
                 }
                 className="text-sm font-medium px-5 py-2.5 rounded-full bg-ink text-white hover:bg-deep transition-colors"
               >
-                {link.label} →
+                {link.label} ↗
               </a>
             ))}
           </div>
@@ -82,9 +82,15 @@ export default function Builds() {
         </p>
       </Reveal>
       <Reveal delay={0.05}>
-        <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-10">
-          Things I've shipped
-        </h2>
+        <div className="flex items-baseline justify-between mb-10">
+          <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight">
+            Things I've shipped
+          </h2>
+
+          <span className="hidden sm:block text-sm text-muted-foreground">
+            {builds.length} projects
+          </span>
+        </div>
       </Reveal>
       <div className="grid md:grid-cols-2 gap-6 md:gap-8">
         {builds.map((b, i) => (

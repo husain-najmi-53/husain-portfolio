@@ -6,12 +6,12 @@ export const profile = {
   github: "https://github.com/husain-najmi-53",
   linkedin: "https://www.linkedin.com/in/husainnajmi07/",
   tagline:
-    "I build and ship real-world web and mobile products \u2014 from ERP features at work to BizMate, my own business-tools platform, on the side.",
+    "I build and ship real-world web and mobile products — from ERP features at work to business tools, websites, and digital products on the side.",
   about:
-    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the full SDLC. I hold an MCA and currently work as a Software Developer on Odoo/ERP systems, and build independent projects like BizMate and UtilVerse using the MERN stack.",
+    "Full-stack developer with hands-on experience building and deploying real-world web and mobile applications across the full SDLC. I hold an MCA and currently work as a Software Developer on Odoo/ERP systems, while independently building and shipping products, business websites, and client-focused digital experiences.",
 };
 
-export const topSkills = ["Dart", "Flutter", "Python", "React"];
+export const topSkills = ["React", "Python", "Flutter", "Odoo"];
 
 export const stack = [
   {
@@ -54,6 +54,23 @@ export type Build = {
 
 export const builds: Build[] = [
   {
+    id: "the-rida-stories",
+    status: "PUBLISHED",
+    name: "The Rida Stories",
+    timeline: "2026",
+    role: "Solo builder, full-stack",
+    description:
+      "A fashion storefront for browsing a curated clothing collection, with orders taken directly through WhatsApp. Built with an admin panel dashboard to manage the products and collections and overall website.",
+    stack: ["React", "Vite", "TypeScript", "Tailwind CSS", "Supabase"],
+    links: [
+      {
+        label: "Visit live site",
+        href: "https://theridastories53.vercel.app",
+      },
+    ],
+    flagship: true,
+  },
+  {
     id: "bizmate",
     status: "PUBLISHED",
     name: "BizMate",
@@ -73,10 +90,26 @@ export const builds: Build[] = [
     flagship: true,
   },
   {
+    id: "bakhtawary-portfolio",
+    status: "PUBLISHED",
+    name: "Bakhtawary Portfolio",
+    timeline: "2026",
+    role: "Solo builder, full-stack",
+    description:
+      "A professional personal portfolio website built to present Mustafa Bakhtawary's experience across business development, sales, technology, and software solutions through a polished, responsive web experience.",
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    links: [
+      {
+        label: "Visit live site",
+        href: "https://bakhtawary-portfolio.vercel.app",
+      },
+    ],
+  },
+  {
     id: "hmcreations53",
     status: "PUBLISHED",
     name: "HMcreations53",
-    timeline: "2026 \u2014 ongoing",
+    timeline: "2026",
     role: "Solo builder, full-stack",
     description:
       'My freelance dev-studio brand \u2014 a landing page showcasing web, mobile, and custom development services, with a live projects showcase, a working contact form, and a custom hexagonal "HM" logo system.',
@@ -107,17 +140,17 @@ export const builds: Build[] = [
     stack: ["Flutter", "Dart"],
     links: [],
   },
-  {
-    id: "life-unscripted",
-    status: "ARCHIVED",
-    name: "Life Unscripted",
-    timeline: "Oct 2022 \u2014 Feb 2023",
-    role: "Solo builder",
-    description:
-      "A clean, minimal blogging website built for first-time bloggers \u2014 CRUD post management, authentication, and a deliberately lightweight footprint for fast page loads.",
-    stack: ["HTML5", "CSS3", "PHP"],
-    links: [],
-  },
+  // {
+  //   id: "life-unscripted",
+  //   status: "ARCHIVED",
+  //   name: "Life Unscripted",
+  //   timeline: "Oct 2022 \u2014 Feb 2023",
+  //   role: "Solo builder",
+  //   description:
+  //     "A clean, minimal blogging website built for first-time bloggers \u2014 CRUD post management, authentication, and a deliberately lightweight footprint for fast page loads.",
+  //   stack: ["HTML5", "CSS3", "PHP"],
+  //   links: [],
+  // },
 ];
 
 export type LogEntry = {
@@ -163,7 +196,12 @@ export const log: LogEntry[] = [
     type: "education",
     badge: "Postgraduate",
     highlight: "80.12% Score",
-    skills: ["Software Engineering", "Full-Stack Dev", "Database Design", "Algorithms"],
+    skills: [
+      "Software Engineering",
+      "Full-Stack Dev",
+      "Database Design",
+      "Algorithms",
+    ],
   },
   {
     date: "2021 — 2024",
@@ -174,6 +212,12 @@ export const log: LogEntry[] = [
     type: "education",
     badge: "Undergraduate",
     highlight: "90.92% Score",
-    skills: ["Web Development", "App Development", "Java", "PHP", "Data Structures"],
+    skills: [
+      "Web Development",
+      "App Development",
+      "Java",
+      "PHP",
+      "Data Structures",
+    ],
   },
 ];
