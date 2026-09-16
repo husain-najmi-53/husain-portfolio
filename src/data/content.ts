@@ -90,6 +90,22 @@ export const builds: Build[] = [
     flagship: true,
   },
   {
+    id: "quotecraft",
+    status: "PUBLISHED",
+    name: "QuoteCraft",
+    timeline: "2026",
+    role: "Solo builder, full-stack",
+    description:
+      "A project pricing and scope estimator for freelancers and creative studios \u2014 turn deliverables, effort hours, expenses, contingency risk, and target profit margins into defensible quotes with multi-currency support and client-ready summaries.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    links: [
+      {
+        label: "Visit live site",
+        href: "https://myquotecraft.vercel.app",
+      },
+    ],
+  },
+  {
     id: "bakhtawary-portfolio",
     status: "PUBLISHED",
     name: "Bakhtawary Portfolio",
@@ -138,7 +154,12 @@ export const builds: Build[] = [
     description:
       "Contributed to the end-to-end development of a production-ready fintech mobile app in Flutter, deployed on the Google Play Store, across the full SDLC including testing, bug-fixing, and technical documentation.",
     stack: ["Flutter", "Dart"],
-    links: [],
+    links: [
+      {
+        label: "View on Play Store",
+        href: "https://play.google.com/store/apps/details?id=com.autoInsure.motor_insurance_app",
+      },
+    ],
   },
   // {
   //   id: "life-unscripted",
